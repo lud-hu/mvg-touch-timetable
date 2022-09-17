@@ -1,8 +1,9 @@
 import sys
-
 import functions_framework
 import mvg_api
 from flask import escape, jsonify
+
+cors_origin = "https://mvg-touch-timetable.web.app"
 
 
 @functions_framework.http
@@ -22,7 +23,12 @@ def autocomplete(request):
         name = request_args['name']
 
         station_list = mvg_api.get_stations(name)
-        return jsonify(station_list)
+
+        # Limit results to first 20
+        response = jsonify(station_list[:20])
+        response.headers.set('Access-Control-Allow-Origin', cors_origin)
+        response.headers.set('Access-Control-Allow-Methods', 'GET')
+        return response
     return 'request params missing'
 
 
@@ -37,6 +43,7 @@ def get_route(request):
         Response object using `make_response`
         <https://flask.palletsprojects.com/en/1.1.x/api/#flask.make_response>.
     """
+
     # request_json = request.get_json(silent=True)
     request_args = request.args
 
@@ -46,6 +53,20 @@ def get_route(request):
         start = request_args['start']
         stop = request_args['stop']
 
-        route = mvg_api.get_route(start, stop)
-        return jsonify(route)
+        route = get_slim_route(mvg_api.get_route(start, stop))
+        response = jsonify(route)
+        response.headers.set('Access-Control-Allow-Origin', cors_origin)
+        response.headers.set('Access-Control-Allow-Methods', 'GET')
+        return response
     return 'request params missing'
+
+
+def get_slim_route_entry(route_entry):
+    d = {
+        "arrival": route_entry["arrival"]
+    }
+    return d
+
+
+def get_slim_route(route_response):
+    return list(map(lambda x: get_slim_route_entry(x), route_response))

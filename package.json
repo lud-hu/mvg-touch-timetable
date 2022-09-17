@@ -1,0 +1,11 @@
+{
+  "name": "mvg-touch-timetable",
+  "version": "1.0.0",
+  "repository": "https://github.com/lud-hu/mvg-touch-timetable.git",
+  "author": "Ludwig Hubert <ludwig.hubert@gmail.com>",
+  "license": "",
+  "scripts": {
+    "pre:deploy": "cd frontend; yarn build",
+    "deploy": "firebase deploy"
+  }
+}

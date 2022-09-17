@@ -1,2 +1,4 @@
 python-docs-samples/**
 **/__pycache__/**
+.firebase/**
+.pytest_cache/**
