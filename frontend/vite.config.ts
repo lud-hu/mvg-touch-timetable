@@ -6,10 +6,19 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/autocomplete":
-        import.meta.env.API_PATH + "/autcomplete" || "http://127.0.0.1:9001",
-      "/getRoute":
-        import.meta.env.API_PATH + "/getRoute" || "http://127.0.0.1:9002",
+      "^/autocomplete": {
+        target: "http://127.0.0.1:9001",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/autocomplete/, ""),
+      },
+      "^/getRoute": {
+        target: "http://127.0.0.1:9002",
+        changeOrigin: true,
+        rewrite: (path) => {
+          console.log(path);
+          return path.replace(/getRoute/, "");
+        },
+      },
     },
   },
 });

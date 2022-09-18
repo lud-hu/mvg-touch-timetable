@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import React from "react";
 import { Connection } from "../Types";
 
-interface RouteEntryProps {
+export interface RouteEntryProps {
   connection: Connection;
 }
 

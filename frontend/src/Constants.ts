@@ -1,2 +1,1 @@
-export const API_PATH =
-  "https://europe-west3-mvg-touch-timetable.cloudfunctions.net";
+export const API_PATH = import.meta.env.VITE_API_PATH;

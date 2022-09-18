@@ -6,9 +6,9 @@ import ConnectionEntry from "./components/RouteView/ConnectionEntry";
 import testdata from "./components/RouteView/testData.json";
 import StationsGrid from "./components/StationsGrid/StationsGrid";
 
-function MyComp() {
-  return <ConnectionEntry connection={testdata as any} />;
-}
+// function MyComp() {
+//   return <ConnectionEntry connection={testdata as any} />;
+// }
 
 function App() {
   return (

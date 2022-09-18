@@ -50,6 +50,7 @@ const StationsGrid: React.FC = () => {
    * - Reset touch path if it was just a click on "Add new"
    */
   useEffect(() => {
+    console.log(startId, stopId);
     if (startId && stopId) {
       if (startId === ADD_NEW_TAG || stopId === ADD_NEW_TAG) {
         setIsAddStationDialogOpen(true);
@@ -130,6 +131,7 @@ const StationsGrid: React.FC = () => {
    * @param station The new station
    */
   const onStationSelection = (station: Station) => {
+    console.log("JO", startId, stopId, station);
     if (startId && stopId) {
       const stationAlreadyExists = stations.find((s) => s.id === station.id);
       if (startId === ADD_NEW_TAG && stopId === ADD_NEW_TAG) {
@@ -174,7 +176,9 @@ const StationsGrid: React.FC = () => {
   const bind = useGesture({
     // @ts-ignore
     onDrag: (state) => updatePointerCoordinates(...state.xy),
-    onTouchStart: (state) => setStartId(state.args[0]),
+    // onTouchStart?
+    // @ts-ignore
+    onDragStart: (state) => setStartId(state.args[0]),
     // @ts-ignore
     onDragEnd: (state) => determineStopFromScreenCoordinates(...state.xy),
   });

@@ -10,8 +10,8 @@ pip3 install -r requirements-test.txt
 ## Run function locally
 
 ```shell
-functions-framework --target=autocomplete --debug
-functions-framework --target=get_route --debug
+functions-framework --target=autocomplete --debug --port 9001
+functions-framework --target=get_route --debug --port 9002
 ```
 
 ## Deploy
