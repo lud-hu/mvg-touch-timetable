@@ -11,12 +11,12 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/autocomplete/, ""),
       },
-      "^/getRoute": {
+      "^/get_route": {
         target: "http://127.0.0.1:9002",
         changeOrigin: true,
         rewrite: (path) => {
           console.log(path);
-          return path.replace(/getRoute/, "");
+          return path.replace(/get_route/, "");
         },
       },
     },

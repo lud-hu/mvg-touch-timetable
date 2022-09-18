@@ -1,26 +1,44 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
-import ConnectionEntry from "./ConnectionEntry";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 import testdata from "../../components/RouteView/testData.json";
+import testdata2 from "../../components/RouteView/testData2.json";
+import ConnectionEntry from "./ConnectionEntry";
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ConnectionEntry",
+  title: "Molecules/Connection List Entry",
   component: ConnectionEntry,
-  //   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  //   argTypes: {
-  //     backgroundColor: { control: 'color' },
-  //   },
+  decorators: [
+    (Story) => (
+      <div style={{ width: 500, maxWidth: "100%" }}>
+        <Story />
+      </div>
+    ),
+  ],
 } as ComponentMeta<typeof ConnectionEntry>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof ConnectionEntry> = (args) => (
   <ConnectionEntry {...args} />
 );
 
 export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
+  connection: testdata2 as any,
+};
+
+export const WithDelay = Template.bind({});
+WithDelay.args = {
+  connection: {
+    ...(testdata2 as any),
+    connectionPartList: [
+      {
+        ...(testdata2 as any).connectionPartList[0],
+        delay: 2,
+      },
+      ...(testdata2 as any).connectionPartList.slice(1),
+    ],
+  },
+};
+
+export const LongList = Template.bind({});
+LongList.args = {
   connection: testdata as any,
 };

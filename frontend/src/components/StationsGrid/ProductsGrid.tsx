@@ -3,7 +3,7 @@ import React from "react";
 import { Products } from "../Types";
 
 interface ProductsGridProps {
-  size: number;
+  size?: number;
   products: Products[];
 }
 
@@ -33,7 +33,9 @@ const ProductsGrid: React.FC<ProductsGridProps> = (
   return (
     <Box
       display="grid"
-      gridTemplateColumns={`repeat(2, ${props.size}px)`}
+      gridTemplateColumns={`repeat(${props.products.length > 1 ? 2 : 1}, ${
+        props.size || 20
+      }px)`}
       gap={0.25}
     >
       {props.products.map((p) => (
@@ -41,7 +43,11 @@ const ProductsGrid: React.FC<ProductsGridProps> = (
           key={p}
           alt={p}
           src={chooseIcon(p)}
-          sx={{ width: props.size, height: props.size, borderRadius: "unset" }}
+          sx={{
+            width: props.size || 20,
+            height: props.size || 20,
+            borderRadius: "unset",
+          }}
         />
       ))}
     </Box>

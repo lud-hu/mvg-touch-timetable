@@ -53,7 +53,8 @@ def get_route(request):
         start = request_args['start']
         stop = request_args['stop']
 
-        route = get_slim_route(mvg_api.get_route(start, stop))
+        # route = get_slim_route(mvg_api.get_route(start, stop))
+        route = mvg_api.get_route(start, stop)
         response = jsonify(route)
         response.headers.set('Access-Control-Allow-Origin', cors_origin)
         response.headers.set('Access-Control-Allow-Methods', 'GET')

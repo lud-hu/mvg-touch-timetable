@@ -1,0 +1,1205 @@
+{
+    "arrival": 1663495500000,
+    "arrival_datetime": "Sun, 18 Sep 2022 12:05:00 GMT",
+    "connectionPartList": [
+        {
+            "arrDelay": 0,
+            "arrival": 1663495500000,
+            "arrivalPlatform": "U4/5 Gleis 1",
+            "arrivalStopPositionNumber": 0,
+            "cancelled": false,
+            "connectionPartType": "TRANSPORTATION",
+            "delay": 0,
+            "departure": 1663494840000,
+            "departureId": "93460a54f4d6d67ed0be8bf91aa29425#1663494840000#de:09162:1050",
+            "departurePlatform": "Gleis 1",
+            "departureStopPositionNumber": 0,
+            "destination": "Laimer Platz",
+            "from": {
+                "divaId": 1050,
+                "efaLat": 48.1184,
+                "efaLon": 11.63144,
+                "hasLiveData": false,
+                "hasZoomData": true,
+                "id": "de:09162:1050",
+                "latitude": 48.1184,
+                "lines": {
+                    "bus": [],
+                    "nachtbus": [],
+                    "nachttram": [],
+                    "otherlines": [],
+                    "sbahn": [],
+                    "tram": [],
+                    "ubahn": []
+                },
+                "link": "MC",
+                "longitude": 11.63144,
+                "name": "Michaelibad",
+                "occupancy": "UNKNOWN",
+                "place": "München",
+                "products": [
+                    "BUS",
+                    "UBAHN"
+                ],
+                "tariffZones": "m",
+                "type": "station"
+            },
+            "fromId": "de:09162:1050",
+            "interchangePath": [],
+            "label": "U5",
+            "lineDirection": "BACKWARD",
+            "network": "swm",
+            "noChangingRequired": false,
+            "occupancy": "UNKNOWN",
+            "path": [
+                {
+                    "latitude": 48.1185,
+                    "longitude": 11.63153,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.118876,
+                    "longitude": 11.630185,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.118968,
+                    "longitude": 11.629801,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.119212,
+                    "longitude": 11.628686,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.119504,
+                    "longitude": 11.627352,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.119688,
+                    "longitude": 11.626456,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120072,
+                    "longitude": 11.624662,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.12012,
+                    "longitude": 11.624421,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120152,
+                    "longitude": 11.624192,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120228,
+                    "longitude": 11.623539,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120308,
+                    "longitude": 11.622434,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120384,
+                    "longitude": 11.621382,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120432,
+                    "longitude": 11.620722,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120512,
+                    "longitude": 11.619584,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120572,
+                    "longitude": 11.618708,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120572,
+                    "longitude": 11.618706,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120572,
+                    "longitude": 11.618706,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120632,
+                    "longitude": 11.617826,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120728,
+                    "longitude": 11.616112,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.120812,
+                    "longitude": 11.614185,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.12086,
+                    "longitude": 11.613406,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.1209,
+                    "longitude": 11.612955,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.121124,
+                    "longitude": 11.611378,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.121176,
+                    "longitude": 11.611095,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.12124,
+                    "longitude": 11.610796,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.121412,
+                    "longitude": 11.610127,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.121564,
+                    "longitude": 11.609615,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.121776,
+                    "longitude": 11.608974,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.121992,
+                    "longitude": 11.608436,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.12224,
+                    "longitude": 11.60794,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.122588,
+                    "longitude": 11.60735,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.123004,
+                    "longitude": 11.606745,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.123396,
+                    "longitude": 11.606239,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.124112,
+                    "longitude": 11.605479,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.124536,
+                    "longitude": 11.605019,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.1249,
+                    "longitude": 11.604674,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.125228,
+                    "longitude": 11.604383,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.125484,
+                    "longitude": 11.604184,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.1257,
+                    "longitude": 11.604064,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.12596,
+                    "longitude": 11.603962,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.126204,
+                    "longitude": 11.603906,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.126468,
+                    "longitude": 11.603874,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.12804,
+                    "longitude": 11.60373,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.128056,
+                    "longitude": 11.603728,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.128056,
+                    "longitude": 11.603728,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.128572,
+                    "longitude": 11.60368,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.129208,
+                    "longitude": 11.603572,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.12978,
+                    "longitude": 11.603521,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.130564,
+                    "longitude": 11.603451,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.130888,
+                    "longitude": 11.603484,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.131212,
+                    "longitude": 11.603565,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.132492,
+                    "longitude": 11.604091,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.132684,
+                    "longitude": 11.604155,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.1329,
+                    "longitude": 11.604204,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.133064,
+                    "longitude": 11.604208,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.133308,
+                    "longitude": 11.604179,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.133544,
+                    "longitude": 11.604113,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.133752,
+                    "longitude": 11.604037,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.133996,
+                    "longitude": 11.603932,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.134208,
+                    "longitude": 11.603805,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.134356,
+                    "longitude": 11.603698,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.134432,
+                    "longitude": 11.603623,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.134512,
+                    "longitude": 11.603555,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.134664,
+                    "longitude": 11.603377,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13482,
+                    "longitude": 11.603154,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.134968,
+                    "longitude": 11.60292,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135196,
+                    "longitude": 11.602504,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13538,
+                    "longitude": 11.602122,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135484,
+                    "longitude": 11.601887,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135572,
+                    "longitude": 11.601632,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135652,
+                    "longitude": 11.601332,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135712,
+                    "longitude": 11.600996,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135748,
+                    "longitude": 11.600706,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13576,
+                    "longitude": 11.600456,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135764,
+                    "longitude": 11.600204,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13574,
+                    "longitude": 11.599633,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135728,
+                    "longitude": 11.599283,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135728,
+                    "longitude": 11.598938,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135728,
+                    "longitude": 11.598901,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135728,
+                    "longitude": 11.598901,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135728,
+                    "longitude": 11.598699,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135732,
+                    "longitude": 11.598585,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135752,
+                    "longitude": 11.598206,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135772,
+                    "longitude": 11.597981,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135792,
+                    "longitude": 11.597649,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135848,
+                    "longitude": 11.59701,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.135948,
+                    "longitude": 11.596608,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.136128,
+                    "longitude": 11.595926,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.136528,
+                    "longitude": 11.594697,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.136816,
+                    "longitude": 11.593933,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.137008,
+                    "longitude": 11.593506,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13862,
+                    "longitude": 11.590517,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13896,
+                    "longitude": 11.589864,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139192,
+                    "longitude": 11.589412,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139408,
+                    "longitude": 11.588926,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139704,
+                    "longitude": 11.588165,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139788,
+                    "longitude": 11.587944,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139788,
+                    "longitude": 11.587944,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140236,
+                    "longitude": 11.586782,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140468,
+                    "longitude": 11.58613,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140784,
+                    "longitude": 11.585277,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.141068,
+                    "longitude": 11.584419,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.141352,
+                    "longitude": 11.583472,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.141456,
+                    "longitude": 11.583077,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.14166,
+                    "longitude": 11.58233,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.141888,
+                    "longitude": 11.581379,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.14222,
+                    "longitude": 11.579864,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142436,
+                    "longitude": 11.578952,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142564,
+                    "longitude": 11.578422,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142676,
+                    "longitude": 11.577872,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142812,
+                    "longitude": 11.577164,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142892,
+                    "longitude": 11.57678,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.14296,
+                    "longitude": 11.576431,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142964,
+                    "longitude": 11.576423,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142964,
+                    "longitude": 11.576423,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143136,
+                    "longitude": 11.575617,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143172,
+                    "longitude": 11.575407,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143188,
+                    "longitude": 11.575262,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143204,
+                    "longitude": 11.575111,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143216,
+                    "longitude": 11.574976,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143224,
+                    "longitude": 11.574814,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143228,
+                    "longitude": 11.574625,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143224,
+                    "longitude": 11.574403,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143204,
+                    "longitude": 11.574164,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143176,
+                    "longitude": 11.573835,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.143136,
+                    "longitude": 11.573594,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.14308,
+                    "longitude": 11.573284,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142984,
+                    "longitude": 11.572809,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.14288,
+                    "longitude": 11.572437,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142772,
+                    "longitude": 11.572078,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142632,
+                    "longitude": 11.571722,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142416,
+                    "longitude": 11.571278,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.142124,
+                    "longitude": 11.570742,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.141832,
+                    "longitude": 11.570175,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.141436,
+                    "longitude": 11.569391,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.141208,
+                    "longitude": 11.568905,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140984,
+                    "longitude": 11.568395,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.14074,
+                    "longitude": 11.567753,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140484,
+                    "longitude": 11.567104,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140484,
+                    "longitude": 11.567104,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140428,
+                    "longitude": 11.566966,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.140156,
+                    "longitude": 11.566277,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139952,
+                    "longitude": 11.565755,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139832,
+                    "longitude": 11.565423,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139744,
+                    "longitude": 11.565123,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139656,
+                    "longitude": 11.564778,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139576,
+                    "longitude": 11.564413,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139512,
+                    "longitude": 11.564032,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139468,
+                    "longitude": 11.563614,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13944,
+                    "longitude": 11.563186,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139432,
+                    "longitude": 11.562977,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13942,
+                    "longitude": 11.562693,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.139412,
+                    "longitude": 11.561,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13938,
+                    "longitude": 11.560367,
+                    "type": "location"
+                },
+                {
+                    "latitude": 48.13936,
+                    "longitude": 11.559989,
+                    "type": "location"
+                }
+            ],
+            "pathDescription": [],
+            "product": "UBAHN",
+            "serverId": "771966349509749140 - 1",
+            "sev": false,
+            "stops": [
+                {
+                    "arrDelay": 0,
+                    "cancelled": false,
+                    "delay": 0,
+                    "location": {
+                        "divaId": 1060,
+                        "efaLat": 48.120564,
+                        "efaLon": 11.618702,
+                        "hasLiveData": false,
+                        "hasZoomData": true,
+                        "id": "de:09162:1060",
+                        "latitude": 48.12046,
+                        "lines": {
+                            "bus": [],
+                            "nachtbus": [],
+                            "nachttram": [],
+                            "otherlines": [],
+                            "sbahn": [],
+                            "tram": [],
+                            "ubahn": []
+                        },
+                        "longitude": 11.61869,
+                        "name": "Innsbrucker Ring",
+                        "occupancy": "UNKNOWN",
+                        "place": "München",
+                        "products": [
+                            "UBAHN"
+                        ],
+                        "tariffZones": "m",
+                        "type": "station"
+                    },
+                    "time": 1663494960000
+                },
+                {
+                    "arrDelay": 0,
+                    "cancelled": false,
+                    "delay": 0,
+                    "location": {
+                        "divaId": 5,
+                        "efaLat": 48.128056,
+                        "efaLon": 11.603709,
+                        "hasLiveData": false,
+                        "hasZoomData": true,
+                        "id": "de:09162:5",
+                        "latitude": 48.12805,
+                        "lines": {
+                            "bus": [],
+                            "nachtbus": [],
+                            "nachttram": [],
+                            "otherlines": [],
+                            "sbahn": [],
+                            "tram": [],
+                            "ubahn": []
+                        },
+                        "longitude": 11.60365,
+                        "name": "Ostbahnhof München",
+                        "occupancy": "UNKNOWN",
+                        "place": "München",
+                        "products": [
+                            "TRAM",
+                            "UBAHN",
+                            "SBAHN",
+                            "BAHN"
+                        ],
+                        "tariffZones": "m",
+                        "type": "station"
+                    },
+                    "time": 1663495080000
+                },
+                {
+                    "arrDelay": 0,
+                    "cancelled": false,
+                    "delay": 0,
+                    "location": {
+                        "divaId": 580,
+                        "efaLat": 48.135728,
+                        "efaLon": 11.598894,
+                        "hasLiveData": false,
+                        "hasZoomData": true,
+                        "id": "de:09162:580",
+                        "latitude": 48.13569,
+                        "lines": {
+                            "bus": [],
+                            "nachtbus": [],
+                            "nachttram": [],
+                            "otherlines": [],
+                            "sbahn": [],
+                            "tram": [],
+                            "ubahn": []
+                        },
+                        "longitude": 11.59836,
+                        "name": "Max-Weber-Platz",
+                        "occupancy": "UNKNOWN",
+                        "place": "München",
+                        "products": [
+                            "BUS",
+                            "TRAM",
+                            "UBAHN"
+                        ],
+                        "tariffZones": "m",
+                        "type": "station"
+                    },
+                    "time": 1663495200000
+                },
+                {
+                    "arrDelay": 0,
+                    "cancelled": false,
+                    "delay": 0,
+                    "location": {
+                        "divaId": 590,
+                        "efaLat": 48.13974,
+                        "efaLon": 11.587899,
+                        "hasLiveData": false,
+                        "hasZoomData": true,
+                        "id": "de:09162:590",
+                        "latitude": 48.13969,
+                        "lines": {
+                            "bus": [],
+                            "nachtbus": [],
+                            "nachttram": [],
+                            "otherlines": [],
+                            "sbahn": [],
+                            "tram": [],
+                            "ubahn": []
+                        },
+                        "longitude": 11.58784,
+                        "name": "Lehel",
+                        "occupancy": "UNKNOWN",
+                        "place": "München",
+                        "products": [
+                            "TRAM",
+                            "UBAHN"
+                        ],
+                        "tariffZones": "m",
+                        "type": "station"
+                    },
+                    "time": 1663495260000
+                },
+                {
+                    "arrDelay": 0,
+                    "cancelled": false,
+                    "delay": 0,
+                    "location": {
+                        "divaId": 60,
+                        "efaLat": 48.142924,
+                        "efaLon": 11.5764,
+                        "hasLiveData": false,
+                        "hasZoomData": true,
+                        "id": "de:09162:60",
+                        "latitude": 48.14251,
+                        "lines": {
+                            "bus": [],
+                            "nachtbus": [],
+                            "nachttram": [],
+                            "otherlines": [],
+                            "sbahn": [],
+                            "tram": [],
+                            "ubahn": []
+                        },
+                        "longitude": 11.57762,
+                        "name": "Odeonsplatz",
+                        "occupancy": "UNKNOWN",
+                        "place": "München",
+                        "products": [
+                            "BUS",
+                            "UBAHN"
+                        ],
+                        "tariffZones": "m",
+                        "type": "station"
+                    },
+                    "time": 1663495380000
+                },
+                {
+                    "arrDelay": 0,
+                    "cancelled": false,
+                    "delay": 0,
+                    "location": {
+                        "divaId": 1,
+                        "efaLat": 48.140436,
+                        "efaLon": 11.567148,
+                        "hasLiveData": false,
+                        "hasZoomData": true,
+                        "id": "de:09162:1",
+                        "latitude": 48.13951,
+                        "lines": {
+                            "bus": [],
+                            "nachtbus": [],
+                            "nachttram": [],
+                            "otherlines": [],
+                            "sbahn": [],
+                            "tram": [],
+                            "ubahn": []
+                        },
+                        "longitude": 11.56613,
+                        "name": "Karlsplatz (Stachus)",
+                        "occupancy": "UNKNOWN",
+                        "place": "München",
+                        "products": [
+                            "BUS",
+                            "TRAM",
+                            "UBAHN",
+                            "SBAHN"
+                        ],
+                        "tariffZones": "m",
+                        "type": "station"
+                    },
+                    "time": 1663495440000
+                }
+            ],
+            "to": {
+                "divaId": 6,
+                "efaLat": 48.14003,
+                "efaLon": 11.56107,
+                "hasLiveData": false,
+                "hasZoomData": true,
+                "id": "de:09162:6",
+                "latitude": 48.14003,
+                "lines": {
+                    "bus": [],
+                    "nachtbus": [],
+                    "nachttram": [],
+                    "otherlines": [],
+                    "sbahn": [],
+                    "tram": [],
+                    "ubahn": []
+                },
+                "link": "HU",
+                "longitude": 11.56107,
+                "name": "Hauptbahnhof",
+                "occupancy": "UNKNOWN",
+                "place": "München",
+                "products": [
+                    "BUS",
+                    "TRAM",
+                    "UBAHN",
+                    "SBAHN"
+                ],
+                "tariffZones": "m",
+                "type": "station"
+            },
+            "zoomNoticeArrival": false,
+            "zoomNoticeArrivalElevator": false,
+            "zoomNoticeArrivalEscalator": false,
+            "zoomNoticeDeparture": false,
+            "zoomNoticeDepartureElevator": false,
+            "zoomNoticeDepartureEscalator": false
+        }
+    ],
+    "departure": 1663494840000,
+    "departure_datetime": "Sun, 18 Sep 2022 11:54:00 GMT",
+    "efaTicketIds": [
+        "EINE-M0",
+        "EINK",
+        "STK-E-2",
+        "STK-K-1",
+        "STKU21-2",
+        "TKS-M0",
+        "TKG-M0",
+        "TKK",
+        "TKF",
+        "ICW-M0",
+        "ICM-M0",
+        "ICMA-M0",
+        "ICJA-M0",
+        "IC9-M0",
+        "IC9MA-M0",
+        "IC9JA-M0",
+        "IC65-M0",
+        "IC65MA-M0",
+        "IC65JA-M0",
+        "AT1W-M0",
+        "AT1M-M0",
+        "AT2W-M0",
+        "AT2M-M0",
+        "APC1-M0",
+        "APC2-M0",
+        "ICS-M0",
+        "BT-21",
+        "BT-22",
+        "BT-23",
+        "BT-24",
+        "BT-25",
+        "BT-11",
+        "BT-12",
+        "BT-13",
+        "BT-14",
+        "BT-15",
+        "BOBS",
+        "BOBG",
+        "E365J",
+        "E365M",
+        "AIRS",
+        "AIRG",
+        "BOB_MVV_P-TSR",
+        "BOB_MVV_S-TSR",
+        "SLTG-TSR",
+        "SLTK-TSR",
+        "SLTE-TSR"
+    ],
+    "from": {
+        "divaId": 1050,
+        "efaLat": 48.1184,
+        "efaLon": 11.63144,
+        "hasLiveData": false,
+        "hasZoomData": true,
+        "id": "de:09162:1050",
+        "latitude": 48.1184,
+        "lines": {
+            "bus": [],
+            "nachtbus": [],
+            "nachttram": [],
+            "otherlines": [],
+            "sbahn": [],
+            "tram": [],
+            "ubahn": []
+        },
+        "link": "MC",
+        "longitude": 11.63144,
+        "name": "Michaelibad",
+        "occupancy": "UNKNOWN",
+        "place": "München",
+        "products": [
+            "BUS",
+            "UBAHN"
+        ],
+        "tariffZones": "m",
+        "type": "station"
+    },
+    "oldTarif": false,
+    "ringFrom": 0,
+    "ringTo": 0,
+    "serverId": 771966349509749100,
+    "to": {
+        "divaId": 6,
+        "efaLat": 48.14003,
+        "efaLon": 11.56107,
+        "hasLiveData": false,
+        "hasZoomData": true,
+        "id": "de:09162:6",
+        "latitude": 48.14003,
+        "lines": {
+            "bus": [],
+            "nachtbus": [],
+            "nachttram": [],
+            "otherlines": [],
+            "sbahn": [],
+            "tram": [],
+            "ubahn": []
+        },
+        "link": "HU",
+        "longitude": 11.56107,
+        "name": "Hauptbahnhof",
+        "occupancy": "UNKNOWN",
+        "place": "München",
+        "products": [
+            "BUS",
+            "TRAM",
+            "UBAHN",
+            "SBAHN"
+        ],
+        "tariffZones": "m",
+        "type": "station"
+    },
+    "zoomNoticeFrom": false,
+    "zoomNoticeFromElevator": false,
+    "zoomNoticeFromEscalator": false,
+    "zoomNoticeTo": false,
+    "zoomNoticeToElevator": false,
+    "zoomNoticeToEscalator": false
+}
