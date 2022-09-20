@@ -24,6 +24,7 @@ dayjs.updateLocale("en", {
     yy: "%d years",
   },
 });
+
 function App() {
   return (
     <div className="App">

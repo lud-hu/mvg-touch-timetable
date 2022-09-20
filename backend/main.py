@@ -25,7 +25,9 @@ def autocomplete(request):
         station_list = mvg_api.get_stations(name)
 
         # Limit results to first 20
-        response = jsonify(station_list[:20])
+        slim_list = list(
+            map(lambda x: get_slim_station_details(x), station_list[:20]))
+        response = jsonify(slim_list)
         response.headers.set('Access-Control-Allow-Origin', cors_origin)
         response.headers.set('Access-Control-Allow-Methods', 'GET')
         return response
@@ -53,8 +55,8 @@ def get_route(request):
         start = request_args['start']
         stop = request_args['stop']
 
-        # route = get_slim_route(mvg_api.get_route(start, stop))
-        route = mvg_api.get_route(start, stop)
+        route = get_slim_connections(mvg_api.get_route(start, stop))
+        # route = mvg_api.get_route(start, stop)
         response = jsonify(route)
         response.headers.set('Access-Control-Allow-Origin', cors_origin)
         response.headers.set('Access-Control-Allow-Methods', 'GET')
@@ -62,12 +64,36 @@ def get_route(request):
     return 'request params missing'
 
 
-def get_slim_route_entry(route_entry):
-    d = {
-        "arrival": route_entry["arrival"]
+def get_slim_connection_part_list(connection_part_list):
+    return {
+        "arrDelay": connection_part_list["arrDelay"],
+        "connectionPartType": connection_part_list["connectionPartType"],
+        "delay": connection_part_list["delay"],
+        "destination": connection_part_list["destination"],
+        "label": connection_part_list["label"],
+        "product": connection_part_list["product"]
     }
-    return d
 
 
-def get_slim_route(route_response):
-    return list(map(lambda x: get_slim_route_entry(x), route_response))
+def get_slim_station_details(station_detail):
+    return {
+        "id": station_detail["id"],
+        "name": station_detail["name"],
+        "place": station_detail["place"],
+        "products": station_detail["products"]
+    }
+
+
+def get_slim_connection(route_entry):
+    return {
+        "arrival": route_entry["arrival"],
+        # "connectionPartList": (route_entry["connectionPartList"]),
+        "connectionPartList": list(map(lambda x: get_slim_connection_part_list(x), route_entry["connectionPartList"])),
+        "departure": route_entry["departure"],
+        "from": get_slim_station_details(route_entry["from"]),
+        "to": get_slim_station_details(route_entry["to"])
+    }
+
+
+def get_slim_connections(route_response):
+    return list(map(lambda x: get_slim_connection(x), route_response))

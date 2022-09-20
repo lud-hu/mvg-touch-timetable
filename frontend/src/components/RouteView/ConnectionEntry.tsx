@@ -68,6 +68,9 @@ const ConnectionEntry: React.FC<RouteEntryProps> = (props: RouteEntryProps) => {
           alignItems: "center",
           justifyContent: "space-between",
           gap: 1,
+          width: "70%",
+          minWidth: 275,
+          margin: "auto",
         }}
       >
         <Box
