@@ -66,32 +66,35 @@ def get_route(request):
 
 def get_slim_connection_part_list(connection_part_list):
     return {
-        "arrDelay": connection_part_list["arrDelay"],
-        "connectionPartType": connection_part_list["connectionPartType"],
-        "delay": connection_part_list["delay"],
-        "destination": connection_part_list["destination"],
-        "label": connection_part_list["label"],
-        "product": connection_part_list["product"]
+        "arrival": connection_part_list.get("arrival", 0),
+        "departure": connection_part_list.get("departure", 0),
+        "arrDelay": connection_part_list.get("arrDelay", 0),
+        "delay": connection_part_list.get("delay", 0),
+        "destination": connection_part_list.get("destination", ""),
+        "label": connection_part_list.get("label", ""),
+        # Special case: connectionPartType == "FOOTWAY" means walking, so put it as a special product:
+        "product": connection_part_list.get("product", connection_part_list.get("connectionPartType") if connection_part_list.get("connectionPartType") == "FOOTWAY" else ""),
+        "from": get_slim_station_details(connection_part_list.get("from")),
+        "to": get_slim_station_details(connection_part_list.get("to")),
     }
 
 
 def get_slim_station_details(station_detail):
     return {
-        "id": station_detail["id"],
-        "name": station_detail["name"],
-        "place": station_detail["place"],
-        "products": station_detail["products"]
+        "id": station_detail.get("id", ""),
+        "name": station_detail.get("name", ""),
+        "place": station_detail.get("place", ""),
+        "products": station_detail.get("products", "")
     }
 
 
 def get_slim_connection(route_entry):
     return {
-        "arrival": route_entry["arrival"],
-        # "connectionPartList": (route_entry["connectionPartList"]),
-        "connectionPartList": list(map(lambda x: get_slim_connection_part_list(x), route_entry["connectionPartList"])),
-        "departure": route_entry["departure"],
-        "from": get_slim_station_details(route_entry["from"]),
-        "to": get_slim_station_details(route_entry["to"])
+        "arrival": route_entry.get("arrival", ""),
+        "connectionPartList": list(map(lambda x: get_slim_connection_part_list(x), route_entry.get("connectionPartList"))),
+        "departure": route_entry.get("departure", ""),
+        "from": get_slim_station_details(route_entry.get("from")),
+        "to": get_slim_station_details(route_entry.get("to"))
     }
 
 

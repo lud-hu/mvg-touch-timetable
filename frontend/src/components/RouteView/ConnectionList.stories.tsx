@@ -1,4 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Connection } from "../Types";
 import ConnectionList from "./ConnectionList";
 import testData from "./testData3.json";
 
@@ -18,7 +19,13 @@ const Template: ComponentStory<typeof ConnectionList> = (args) => (
   <ConnectionList {...args} />
 );
 
+const now = new Date();
+
 export const Primary = Template.bind({});
 Primary.args = {
-  connections: testData as any,
+  connections: (testData as Connection[]).map((c, i) => ({
+    ...c,
+    departure: new Date(now.getTime() + i * 60000).getTime(),
+    arrival: new Date(now.getTime() + (i + 10) * 60000).getTime(),
+  })),
 };

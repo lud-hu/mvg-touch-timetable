@@ -103,19 +103,19 @@ export interface StoredStation extends Station {
 
 export interface ConnectionPartList {
   arrDelay: number;
-  // arrival: any;
+  arrival: number;
   // cancelled: boolean;
   // arrivalPlatform: string;
   // arrivalStopPositionNumber: number;
   // cancelled: boolean;
-  connectionPartType: string;
+  // connectionPartType: string;
   delay: number;
-  // departure: any;
+  departure: number;
   // departureId: string;
   // departurePlatform: string;
   // departureStopPositionNumber: number;
   destination: string;
-  // from: From;
+  from: StationDetails;
   // fromId: string;
   // interchangePath: InterchangePath[];
   label: string;
@@ -129,7 +129,7 @@ export interface ConnectionPartList {
   // serverId: string;
   // sev: boolean;
   // stops: Stop[];
-  // to: To;
+  to: StationDetails;
   // zoomNoticeArrival: boolean;
   // zoomNoticeArrivalElevator: boolean;
   // zoomNoticeArrivalEscalator: boolean;
@@ -178,4 +178,12 @@ export interface Connection {
   // zoomNoticeToEscalator: boolean;
 }
 
-export type Products = "SBAHN" | "UBAHN" | "TRAM" | "BUS" | "BAHN";
+export type Products =
+  | "SBAHN"
+  | "UBAHN"
+  | "TRAM"
+  | "BUS"
+  | "REGIONAL_BUS"
+  | "EXPRESS_BUS"
+  | "BAHN"
+  | "FOOTWAY";

@@ -12,11 +12,13 @@ import React from "react";
 import ProductsGrid from "../StationsGrid/ProductsGrid";
 import { Connection, Products } from "../Types";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import DepartureTimestamp from "./DepartureTimestamp";
 
 dayjs.extend(relativeTime);
 
 export interface RouteEntryProps {
   connection: Connection;
+  onClick?: () => any;
 }
 
 /**
@@ -73,14 +75,10 @@ const ConnectionEntry: React.FC<RouteEntryProps> = (props: RouteEntryProps) => {
           margin: "auto",
         }}
       >
-        <Box
-          sx={{ color: departureConnection.delay > 0 ? "error.main" : "unset" }}
-        >
-          {dayjs(
-            props.connection.departure +
-              (departureConnection.delay || 0) * 60 * 1000
-          ).format("HH:mm")}
-        </Box>
+        <DepartureTimestamp
+          time={props.connection.departure}
+          delay={departureConnection.delay}
+        />
         <Divider
           sx={{
             my: 1,
@@ -105,16 +103,10 @@ const ConnectionEntry: React.FC<RouteEntryProps> = (props: RouteEntryProps) => {
             sx={{ color: "text.disabled" }}
           />
         </Divider>
-        <Box
-          sx={{
-            color: arrivalConnection.arrDelay > 0 ? "error.main" : "unset",
-          }}
-        >
-          {dayjs(
-            props.connection.arrival +
-              (arrivalConnection.arrDelay || 0) * 60 * 1000
-          ).format("HH:mm")}
-        </Box>
+        <DepartureTimestamp
+          time={props.connection.arrival}
+          delay={arrivalConnection.delay}
+        />
       </Box>
     );
   };
@@ -131,7 +123,7 @@ const ConnectionEntry: React.FC<RouteEntryProps> = (props: RouteEntryProps) => {
     >
       <span>
         {props.connection.connectionPartList.filter(
-          (p) => p.connectionPartType !== "FOOTWAY"
+          (p) => p.product !== "FOOTWAY"
         ).length - 1}{" "}
         Changes
       </span>
@@ -144,7 +136,13 @@ const ConnectionEntry: React.FC<RouteEntryProps> = (props: RouteEntryProps) => {
   );
 
   return (
-    <ListItem alignItems="flex-start">
+    <ListItem
+      alignItems="flex-start"
+      onClick={props.onClick}
+      sx={{
+        cursor: props.onClick ? "pointer" : "unset",
+      }}
+    >
       <ListItemText
         primary={<ConnectionEntryTitle connection={props.connection} />}
         secondaryTypographyProps={{
