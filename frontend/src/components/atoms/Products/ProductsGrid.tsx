@@ -1,6 +1,6 @@
 import { Box, Avatar } from "@mui/material";
 import React from "react";
-import { Products } from "../Types";
+import { Products } from "../../Util/Types";
 import ProductIcon from "./ProductIcon";
 
 interface ProductsGridProps {
@@ -23,7 +23,7 @@ const ProductsGrid: React.FC<ProductsGridProps> = (
       gap={0.25}
     >
       {props.products.map((p) => (
-        <ProductIcon product={p} size={props.size || 20} />
+        <ProductIcon product={p} size={props.size || 20} key={p} />
       ))}
     </Box>
   );

@@ -1,4 +1,4 @@
-import { Products } from "../Types";
+import { Products } from "./Types";
 
 export const getColorForProduct = (
   product: Products,

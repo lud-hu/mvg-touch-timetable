@@ -4,7 +4,7 @@ import { Box } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import { API_PATH } from "../Constants";
 import { useDebounce } from "../hooks/useDebounce";
-import { StationDetails } from "./Types";
+import { StationDetails } from "./Util/Types";
 
 interface AutocompleteProps {
   onStationsFound: (stations: StationDetails[]) => void;

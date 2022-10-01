@@ -1,18 +1,11 @@
-import {
-  ListItem,
-  ListItemText,
-  Box,
-  Typography,
-  Divider,
-  Chip,
-} from "@mui/material";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Box, Chip, Divider, ListItem, ListItemText } from "@mui/material";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import React from "react";
-import ProductsGrid from "../StationsGrid/ProductsGrid";
-import { Connection, Products } from "../Types";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import DepartureTimestamp from "./DepartureTimestamp";
+import ProductsGrid from "../../atoms/Products/ProductsGrid";
+import DepartureTimestamp from "../../pages/RouteView/DepartureTimestamp";
+import { Connection, Products } from "../../Util/Types";
 
 dayjs.extend(relativeTime);
 

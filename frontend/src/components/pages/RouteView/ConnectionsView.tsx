@@ -10,9 +10,9 @@ import {
 import dayjs from "dayjs";
 import React, { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
-import { API_PATH } from "../../Constants";
-import ConnectionList from "./ConnectionList";
-import { Connection } from "../Types";
+import { API_PATH } from "../../../Constants";
+import ConnectionList from "../../molecules/ConnectionList/ConnectionList";
+import { Connection } from "../../Util/Types";
 
 interface RouteViewProps {
   test?: string;

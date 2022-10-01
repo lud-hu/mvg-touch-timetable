@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Products } from "../Types";
+import { Products } from "../../Util/Types";
 import ProductBadge from "./ProductBadge";
 
 export default {

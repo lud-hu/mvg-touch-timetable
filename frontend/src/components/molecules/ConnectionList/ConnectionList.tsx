@@ -1,11 +1,11 @@
 import { AppBar, Box, Dialog, Divider, IconButton, Slide } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import React, { useEffect, useState } from "react";
-import { Connection } from "../Types";
 import ConnectionEntry from "./ConnectionEntry";
 import CloseIcon from "@mui/icons-material/Close";
 import Toolbar from "@mui/material/Toolbar";
-import ConnectionDetails from "./ConnectionDetails";
+import { Connection } from "../../Util/Types";
+import ConnectionDetails from "../ConnectionDetails/ConnectionDetails";
 
 interface ConnectionListProps {
   connections: Connection[];
@@ -28,10 +28,6 @@ const ConnectionList: React.FC<ConnectionListProps> = (
 ) => {
   const [connectionDialogData, setConnectionDialogData] =
     useState<Connection>();
-
-  useEffect(() => {
-    console.log("Data", connectionDialogData);
-  }, [connectionDialogData]);
 
   return (
     <Box>

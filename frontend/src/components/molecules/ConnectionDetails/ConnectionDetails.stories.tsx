@@ -1,12 +1,12 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import testdata from "../../components/RouteView/testData.json";
-import testdata2 from "../../components/RouteView/testData2.json";
-import { Connection } from "../Types";
-import ConnectionEntry from "./ConnectionEntry";
+import testdata from "../../../stories/testData.json";
+import testdata2 from "../../../stories/testData2.json";
+import { Connection } from "../../Util/Types";
+import ConnectionDetails from "./ConnectionDetails";
 
 export default {
-  title: "Molecules/Connection List Entry",
-  component: ConnectionEntry,
+  title: "Molecules/Connection Details",
+  component: ConnectionDetails,
   decorators: [
     (Story) => (
       <div style={{ width: 500, maxWidth: "100%" }}>
@@ -14,10 +14,10 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof ConnectionEntry>;
+} as ComponentMeta<typeof ConnectionDetails>;
 
-const Template: ComponentStory<typeof ConnectionEntry> = (args) => (
-  <ConnectionEntry {...args} />
+const Template: ComponentStory<typeof ConnectionDetails> = (args) => (
+  <ConnectionDetails {...args} />
 );
 
 const now = new Date();
@@ -51,5 +51,5 @@ WithDelay.args = {
 
 export const LongList = Template.bind({});
 LongList.args = {
-  connection: getUpToDateConnection(testdata as unknown as Connection),
+  connection: testdata as unknown as Connection,
 };

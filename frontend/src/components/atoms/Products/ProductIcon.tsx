@@ -1,6 +1,6 @@
 import { Avatar, SxProps } from "@mui/material";
 import React from "react";
-import { Products } from "../Types";
+import { Products } from "../../Util/Types";
 
 interface ProductIconProps {
   product: Products;

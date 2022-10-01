@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import ProductBadge from "../StationsGrid/ProductBadge";
-import { Connection, ConnectionPartList, Products } from "../Types";
-import { getColorForProduct } from "../Util/Products";
-import DepartureTimestamp from "./DepartureTimestamp";
+import ProductBadge from "../../atoms/Products/ProductBadge";
+import DepartureTimestamp from "../../pages/RouteView/DepartureTimestamp";
+import { getColorForProduct } from "../../Util/ProductsHelper";
+import { Connection, ConnectionPartList, Products } from "../../Util/Types";
 
 interface ConnectionDetailsProps {
   connection: Connection;
@@ -184,7 +184,7 @@ const ConnectionDetails: React.FC<ConnectionDetailsProps> = (
   return (
     <Box component="ul" sx={{ p: 0, m: 0 }}>
       {props.connection.connectionPartList.map((l, i, arr) => (
-        <Box component="li" sx={{ display: "flex" }}>
+        <Box component="li" sx={{ display: "flex" }} key={l.label}>
           <Box sx={{ width: "100%" }}>
             <StationRow
               connection={l}

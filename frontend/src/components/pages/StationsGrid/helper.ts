@@ -1,4 +1,4 @@
-import { StoredStation } from "../Types";
+import { StoredStation } from "../../Util/Types";
 
 /**
  * Increases the search counts for the given stations by 1.

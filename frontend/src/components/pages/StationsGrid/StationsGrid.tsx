@@ -3,11 +3,11 @@ import { Box } from "@mui/system";
 import { useGesture } from "@use-gesture/react";
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useLocalStorage } from "../../hooks/useLocalStorage";
-import { StoredStation, Station } from "../Types";
+import { useLocalStorage } from "../../../hooks/useLocalStorage";
+import { StoredStation, Station } from "../../Util/Types";
 import AddStationDialog from "./AddStationDialog";
 import { initialStations, ADD_NEW_TAG, increaseSearchCounts } from "./helper";
-import TouchLine from "./TouchLine";
+import TouchLine from "../../atoms/TouchLine/TouchLine";
 
 const Item = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#4562a2",

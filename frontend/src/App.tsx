@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import ConnectionsView from "./components/RouteView/ConnectionsView";
-import StationsGrid from "./components/StationsGrid/StationsGrid";
+import ConnectionsView from "./components/pages/RouteView/ConnectionsView";
+import StationsGrid from "./components/pages/StationsGrid/StationsGrid";
 import dayjs from "dayjs";
 import updateLocale from "dayjs/plugin/updateLocale";
 

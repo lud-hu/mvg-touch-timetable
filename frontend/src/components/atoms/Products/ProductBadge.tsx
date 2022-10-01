@@ -1,8 +1,9 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { Products } from "../Types";
-import { getColorForProduct } from "../Util/Products";
+import { getColorForProduct } from "../../Util/ProductsHelper";
+import { Products } from "../../Util/Types";
+
 import ProductIcon from "./ProductIcon";
 
 interface ProductBadgeProps {

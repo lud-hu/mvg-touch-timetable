@@ -4,9 +4,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import * as React from "react";
-
 import {
-  Avatar,
   Box,
   CircularProgress,
   List,
@@ -16,9 +14,9 @@ import {
   SxProps,
 } from "@mui/material";
 import { useState } from "react";
-import Autocomplete from "../Autocomplete";
-import { Station, StationDetails } from "../Types";
-import ProductsGrid from "./ProductsGrid";
+import Autocomplete from "../../Autocomplete";
+import { Station, StationDetails } from "../../Util/Types";
+import ProductsGrid from "../../atoms/Products/ProductsGrid";
 
 interface AddStationDialogProps {
   open: boolean;
@@ -266,9 +264,8 @@ const dummy = [
 const AddStationDialog: React.FC<AddStationDialogProps> = (
   props: AddStationDialogProps
 ) => {
-  const [suggestionList, setSuggestionList] = React.useState<
-    StationDetails[] | undefined
-  >();
+  const [suggestionList, setSuggestionList] =
+    React.useState<StationDetails[] | undefined>();
   const [isLoading, setIsLoading] = useState(false);
 
   const onStationSelection = (station: Station) => {

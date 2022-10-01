@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import testdata from "../../components/RouteView/testData.json";
+import testdata from "../../../stories/testData.json";
 import TouchLine from "./TouchLine";
 
 export default {
