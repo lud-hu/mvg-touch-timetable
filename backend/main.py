@@ -8,7 +8,8 @@ cors_origin = "https://mvg-touch-timetable.web.app"
 
 @functions_framework.http
 def autocomplete(request):
-    """HTTP Cloud Function.
+    """HTTP Cloud Function for retrieving auto completion suggestions based on the passed arg "name".
+
     Args:
         request (flask.Request): The request object.
         <https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data>
@@ -36,7 +37,8 @@ def autocomplete(request):
 
 @functions_framework.http
 def get_route(request):
-    """HTTP Cloud Function.
+    """HTTP Cloud Function for retrieving route suggestions for the passed args "start" and "stop".
+
     Args:
         request (flask.Request): The request object.
         <https://flask.palletsprojects.com/en/1.1.x/api/#incoming-request-data>
@@ -46,17 +48,13 @@ def get_route(request):
         <https://flask.palletsprojects.com/en/1.1.x/api/#flask.make_response>.
     """
 
-    # request_json = request.get_json(silent=True)
     request_args = request.args
 
-    # if request_json and 'name' in request_json:
-    #     name = request_json['name']
     if request_args and 'start' in request_args and 'stop' in request_args:
         start = request_args['start']
         stop = request_args['stop']
 
         route = get_slim_connections(mvg_api.get_route(start, stop))
-        # route = mvg_api.get_route(start, stop)
         response = jsonify(route)
         response.headers.set('Access-Control-Allow-Origin', cors_origin)
         response.headers.set('Access-Control-Allow-Methods', 'GET')
@@ -65,6 +63,8 @@ def get_route(request):
 
 
 def get_slim_connection_part_list(connection_part_list):
+    """Strips out any unneeded json properties of a connection part list.
+    """
     return {
         "arrival": connection_part_list.get("arrival", 0),
         "departure": connection_part_list.get("departure", 0),
@@ -80,6 +80,8 @@ def get_slim_connection_part_list(connection_part_list):
 
 
 def get_slim_station_details(station_detail):
+    """Strips out any unneeded json properties of a station.
+    """
     return {
         "id": station_detail.get("id", ""),
         "name": station_detail.get("name", ""),
@@ -89,6 +91,8 @@ def get_slim_station_details(station_detail):
 
 
 def get_slim_connection(route_entry):
+    """Strips out any unneeded json properties of a connection.
+    """
     return {
         "arrival": route_entry.get("arrival", ""),
         "connectionPartList": list(map(lambda x: get_slim_connection_part_list(x), route_entry.get("connectionPartList"))),
